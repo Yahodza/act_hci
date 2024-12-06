@@ -1,0 +1,67 @@
+/* Pagination Container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Pagination Button Styling */
+.pagination .page-link {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2d6a4f; /* Dark green for text */
+    background-color: #eafaf1; /* Light green for background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Active Page Button */
+.pagination .page-item.active .page-link {
+    background-color: #4CAF50; /* Green for active page */
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.pagination .page-link:hover {
+    transform: translateY(-2px);
+    background-color: #d0f0d9; /* Lighter green for hover effect */
+}
+
+/* Disabled State */
+.pagination .page-item.disabled .page-link {
+    color: #9e9e9e; /* Gray for disabled buttons */
+    background-color: #f3f9f5; /* Light gray for background */
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* First, Last, Previous, Next Buttons */
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+    border-radius: 8px;
+}
+
+/* Margin adjustments */
+.pagination .page-item:first-child .page-link {
+    margin-right: 10px;
+}
+
+.pagination .page-item:last-child .page-link {
+    margin-left: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .pagination .page-link {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

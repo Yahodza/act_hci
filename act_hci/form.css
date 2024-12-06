@@ -1,0 +1,70 @@
+/* Table cell styling */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Flex container for form buttons */
+form {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 0; /* Uniform padding */
+    font-size: 14px;
+    width: 140px; /* Fixed width for consistency */
+    border: 1px solid rgba(108, 117, 125, 0.5); /* Light grey border */
+    border-radius: 8px;
+    cursor: pointer;
+    color: #6C757D; /* Grey text color */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+/* Hover effect for all buttons */
+.btn:hover {
+    color: #343A40; /* Darker grey text on hover */
+    border-color: #343A40; /* Darker border on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active effect */
+.btn:active {
+    transform: translateY(0); /* Reset transform */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+/* Edit Button */
+.btn-edit {
+    color: #5A6268; /* Light grey text */
+}
+
+/* Delete Button */
+.btn-delete {
+    color: #DC3545; /* Light red text for delete */
+}
+
+/* Change Password Button */
+.btn-change-password {
+    color: #FFC107; /* Light yellow text */
+}
+
+/* Button Focus State */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(108, 117, 125, 0.3); /* Light grey focus ring */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .btn {
+        width: 120px; /* Adjust width for small screens */
+        font-size: 12px;
+    }
+}

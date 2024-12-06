@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    background-color: #e9f7ef; /* Light green background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #2f5d33; /* Darker green for the sidebar */
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #4caf50; /* Hover color */
+}
+
+/* Active Link */
+.sidebar a.active {
+    background-color: #28a745; /* Active link color */
+    color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-left: 250px;
+    background-color: #2f5d33; /* Darker green for navbar */
+    color: #fff;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+    width: calc(100% - 250px);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 80px; /* To adjust for the navbar */
+    background-color: #e9f7ef; /* Light green for main content */
+    min-height: 100vh;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff; /* White background for cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2f5d33; /* Dark green for card titles */
+}
+
+.dashboard-card .card-body {
+    font-size: 14px;
+    color: #6c757d; /* Grey color for card body text */
+}
+
+/* Footer */
+.footer {
+    margin-left: 250px;
+    background-color: #2f5d33; /* Darker green for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: calc(100% - 250px);
+    bottom: 0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px;
+    }
+
+    .navbar {
+        width: calc(100% - 100px);
+        margin-left: 100px;
+    }
+
+    .main-content {
+        margin-left: 100px;
+    }
+
+    .footer {
+        width: calc(100% - 100px);
+        margin-left: 100px;
+    }
+
+    .sidebar a {
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+}

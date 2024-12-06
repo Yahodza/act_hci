@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* Body styling */
+body {
+  background: linear-gradient(to bottom, #f4fdf4, #eafaf1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d6a4f;  /* Dark green */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.container {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 1100px; /* Increased width for a wider appearance */
+  margin: 30px auto;
+  background-color: #ffffff;
+}
+
+/* Flex container */
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Rounded images */
+.rounded-circle {
+  border-radius: 50%;
+}
+
+/* Headings */
+h2 {
+  color: #3c763d;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navigation Pills */
+.nav-pills .nav-link {
+  font-weight: 600;
+  color: #2d6a4f !important; /* Green theme for non-active links */
+}
+
+.nav-pills .nav-link.active {
+  background-color: #5cb85c;
+  color: white !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: #4cae4c;
+  transform: translateY(-2px);
+}
+
+/* Links */
+a {
+  color: #5cb85c;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #2d6a4f;
+}
+
+/* Form and Input */
+.form-control {
+  border: 1px solid #52b788;
+  border-radius: 8px;
+  padding: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 8px rgba(82, 183, 136, 0.3);
+}
+
